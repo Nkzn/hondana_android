@@ -85,8 +85,10 @@ public class MainActivity extends AppCompatActivity
             return true;
         }
 
+
         return super.onOptionsItemSelected(item);
     }
+
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -94,22 +96,27 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_home) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_favorite) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_exchange) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_transaction) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_set) {
+
+        } else if (id == R.id.nav_guide) {
+
+        } else if (id == R.id.nav_mail) {
+
 
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }
